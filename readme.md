@@ -246,7 +246,7 @@ document.querySelector('input').addEventListener('change', handleChange);
 ```javascript
 /**
  * Specify string type
- * @typedef {'RED'|'GREEN'|'BLUE'} RgbLabel
+ * @typedef {'RED' | 'GREEN' | 'BLUE'} RgbLabel
  */
 
 /** @type {RgbLabel} */
@@ -310,7 +310,7 @@ function showDate(date) {
 const mix = { foo: 'foo', bar: 'bar' };
 ```
 
-### Cast
+### Cast/Assertion
 
 ```javascript
 /**
