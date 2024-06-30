@@ -326,6 +326,18 @@ const foo = /** @type {{ foo: string }} */ (JSON.parse('{ "foo": "bar" }'));
 const CONST_VALUE = /** @type {const} */ ({ foo: 'bar' });
 ```
 
+### Satisfies
+
+`satisfies` is a powerfull feature to check the RHS value instead of ask TS to follow something you assert.
+
+```javascript
+/** @satisfies {number} */
+const foo = 123;
+const bar = /** @satisfies {number} */ (123);
+```
+
+NOTE: TS introduced `satisfies` in [TS 5.0](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-0.html#satisfies-support-in-jsdoc).
+
 ## Template and conditional type
 
 Template and conditional type is more used by library creators, it make typing more flexible.
