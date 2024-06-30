@@ -416,6 +416,20 @@ const handler = async (req, rep) => {
 };
 ```
 
+Instead of import the types in every line when you use it, TS supports [import tag](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/#the-jsdoc-import-tag) for reuse the types in a more convenient way.
+
+```javascript
+/** @import { SomeType } from "some-module" */
+
+/** @param {SomeType} myValue */
+function doSomething(myValue) {}
+
+/** @import * as someModule from "some-module" */
+
+/** @param {someModule.SomeType} myValue */
+function doSomething(myValue) {}
+```
+
 ## How to type efficiently
 
 ### Writing types in d.ts file
