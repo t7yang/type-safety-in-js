@@ -38,6 +38,8 @@ const und = undefined;
 
 /** @type {symbol} */
 const sym = Symbol('foo');
+/** @type {unique symbol} */
+const sym = Symbol('bar');
 
 /** @type {*} */
 const jsDocAny = 'any value';
